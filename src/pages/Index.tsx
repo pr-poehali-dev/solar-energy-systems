@@ -4,10 +4,10 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">СВЕЖ*МАГ</div>
+        <div className="logo">ВОТ*ЕДА</div>
         <nav>
-          <a href="#">Каталог</a>
-          <a href="#">Как это работает</a>
+          <a href="#">Меню</a>
+          <a href="#">Как заказать</a>
           <a href="#">О нас</a>
           <a href="#">Контакты</a>
         </nav>
@@ -18,41 +18,47 @@ export default function Index() {
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              СВЕЖАК
+              ГОРЯЧЕЕ
               <br />
-              ПРЯ МО К <span>ДВЕРИ</span>
+              ПРЯМО К <span>ТЕБЕ</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Покупаем продукты в супермаркете и доставляем по городу. Без переплат, без очередей — только свежее и то, что ты выбрал.
+              Закупаем в супермаркете и везём по городу. Свежие продукты, готовая еда и всё нужное — без очередей и лишних хлопот.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Сделать заказ
+                Заказать сейчас
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
-                Как это работает
+                Смотреть меню
               </button>
             </div>
           </div>
-          <div className="hero-img" style={{ background: "url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center center / cover" }}>
+          <div
+            className="hero-img"
+            style={{
+              background:
+                "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center center / cover",
+            }}
+          >
             <div className="sticker">
               ДОСТАВКА
               <br />
-              ЗА 1 ЧАС
+              ОТ 45 МИН
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #СВЕЖЕЕ
+              #ВКУСНО
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              БЫСТРО
+              ГОРЯЧЕЕ
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * ПРОДУКТЫ ИЗ СУПЕРМАРКЕТА * ДОСТАВКА ПО ГОРОДУ * СВЕЖИЕ ФРУКТЫ И ОВОЩИ * БЕЗ НАЦЕНКИ * БЫСТРО И УДОБНО *
-            ПРОДУКТЫ ИЗ СУПЕРМАРКЕТА * ДОСТАВКА ПО ГОРОДУ * СВЕЖИЕ ФРУКТЫ И ОВОЩИ * БЕЗ НАЦЕНКИ * БЫСТРО И УДОБНО
+            &nbsp; * ДОСТАВКА ЕДЫ ПО ГОРОДУ * ГОРЯЧО И БЫСТРО * ЗАКУПАЕМ В СУПЕРМАРКЕТЕ * БЕЗ МИНИМАЛКИ * РАБОТАЕМ ЕЖЕДНЕВНО *
+            ДОСТАВКА ЕДЫ ПО ГОРОДУ * ГОРЯЧО И БЫСТРО * ЗАКУПАЕМ В СУПЕРМАРКЕТЕ * БЕЗ МИНИМАЛКИ * РАБОТАЕМ ЕЖЕДНЕВНО
           </div>
         </div>
 
@@ -64,17 +70,16 @@ export default function Index() {
               className="text-sm md:text-base"
               style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}
             >
-              Весь каталог
+              Всё меню
             </a>
           </div>
 
           <div className="menu-grid">
-            {/* Item 1 */}
             <div className="menu-card">
-              <span className="menu-tag">Хит заказов</span>
+              <span className="menu-tag">Хит дня</span>
               <img
-                src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Фрукты и овощи"
+                src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Готовые блюда"
               />
               <div className="menu-card-body">
                 <div
@@ -85,23 +90,22 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Фрукты и овощи</h3>
-                  <span className="price">от 300 ₽</span>
+                  <h3>Готовые блюда</h3>
+                  <span className="price">от 350 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Свежие сезонные фрукты и овощи прямо из супермаркета — отбираем только лучшее.
+                  Горячие обеды и ужины из супермаркета — котлеты, пюре, гарниры, супы. Разогреем и упакуем.
                 </p>
               </div>
             </div>
 
-            {/* Item 2 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--secondary)" }}>
                 Популярное
               </span>
               <img
-                src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Мясо и птица"
+                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Пицца и выпечка"
               />
               <div className="menu-card-body">
                 <div
@@ -112,21 +116,22 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Мясо и птица</h3>
-                  <span className="price">от 500 ₽</span>
+                  <h3>Пицца и выпечка</h3>
+                  <span className="price">от 400 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Охлаждённое мясо, птица и полуфабрикаты — доставим в термосумке.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>
+                  Пиццы, пироги, хачапури и свежая выпечка прямо из отдела горячей еды.
+                </p>
               </div>
             </div>
 
-            {/* Item 3 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Быстро
+                Быстрее всего
               </span>
               <img
-                src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Молочные продукты"
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Салаты и закуски"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +142,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Молочка и яйца</h3>
-                  <span className="price">от 200 ₽</span>
+                  <h3>Салаты и закуски</h3>
+                  <span className="price">от 250 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Молоко, творог, сыр, йогурты, яйца — всё свежее и в целости.
+                  Свежие салаты, нарезки, роллы и закуски — идеально для быстрого перекуса или праздника.
                 </p>
               </div>
             </div>
@@ -150,9 +155,9 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ПРОСТО. БЫСТРО. СВЕЖО.</h2>
+            <h2 className="vibe-title">ТЫ ПИШЕШЬ — МЫ ВЕЗЁМ.</h2>
             <p className="vibe-text">
-              Ты присылаешь список — мы едем в магазин, закупаем и привозим прямо к двери. Никакой регистрации, никаких приложений. Просто напиши нам — и готово.
+              Никаких приложений и регистраций. Пишешь нам список — мы едем в супермаркет, берём горячую еду и продукты, и привозим прямо к двери. Тепло, быстро, по-человечески.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
               Как сделать заказ
@@ -163,30 +168,30 @@ export default function Index() {
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @СВЕЖ.МАГ
+            @ВОТ.ЕДА
           </h2>
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 alt="Фото 1"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1506484381205-f7945653044d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 alt="Фото 2"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 alt="Фото 3"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 alt="Фото 4"
               />
             </div>
@@ -196,9 +201,9 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">СВЕЖ*МАГ</div>
+          <div className="footer-logo">ВОТ*ЕДА</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Покупаем продукты в супермаркете и доставляем по городу. Свежо, быстро, без лишних хлопот.
+            Закупаем еду в супермаркете и доставляем по городу. Горячо, быстро, без лишних шагов.
           </p>
         </div>
         <div className="footer-links">
@@ -206,12 +211,12 @@ export default function Index() {
           <ul>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Каталог
+                Меню
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Как это работает
+                Как заказать
               </a>
             </li>
             <li>
@@ -229,10 +234,10 @@ export default function Index() {
         <div className="footer-links">
           <h4>Часы работы</h4>
           <ul>
-            <li>Пн–Пт: 8:00–22:00</li>
-            <li>Сб–Вс: 9:00–21:00</li>
+            <li>Пн–Пт: 9:00–22:00</li>
+            <li>Сб–Вс: 10:00–22:00</li>
             <li style={{ marginTop: "10px", color: "var(--primary)", fontWeight: 700 }}>
-              Доставка от 1 часа
+              Доставка от 45 минут
             </li>
           </ul>
         </div>
@@ -245,12 +250,12 @@ export default function Index() {
               </a>
             </li>
             <li>
-              <a href="https://t.me/svezhmag" style={{ color: "inherit", textDecoration: "none" }}>
+              <a href="https://t.me/voteda" style={{ color: "inherit", textDecoration: "none" }}>
                 Telegram
               </a>
             </li>
             <li>
-              <a href="https://vk.com/svezhmag" style={{ color: "inherit", textDecoration: "none" }}>
+              <a href="https://vk.com/voteda" style={{ color: "inherit", textDecoration: "none" }}>
                 ВКонтакте
               </a>
             </li>
